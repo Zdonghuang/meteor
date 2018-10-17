@@ -1,8 +1,6 @@
 <template>
   <div class="home">
-    <h1>
-      太阳能水位监测
-    </h1>
+    
     <img src="/solar.png" class="solar">
     <img src="/mobile2.png" width="20%" class="second">
     <div class="water">
@@ -126,6 +124,9 @@ export default {
 
 
 <style lang="less">
+body{
+  background-color: rgb(24, 151, 151);
+}
 .home {
   text-align: center;
   width: 1000px;
@@ -138,14 +139,14 @@ main{
   width: 1200px !important;
   padding: 0 !important;
   min-width: 1200px !important;
-  margin: 20px auto !important;
+  margin: 10px auto 0 !important;
   height: 670px;
   box-shadow: 0 0 10px #333;
   background-color: #fff;
 }
 img.second{
   float: right;
-  margin-top: 50px;
+  margin-top: 120px;
   margin-right: 40px;
 }
 

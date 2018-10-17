@@ -1,8 +1,12 @@
 <template>
-  <nav>
-    <div class="app-title">Leaplate</div>
-    <router-link :to="{ name: 'home' }" exact>Home</router-link>
-  </nav>
+<h1>
+  <span>
+    太阳能水位监测
+  </span>
+  <span>
+    Powered by: LeapAI.com
+  </span>
+</h1>
 </template>
 
 <script>
@@ -23,14 +27,23 @@ export default {
 
 <style lang="less" scoped>
 @import "style/imports";
+h1{
+  margin: 16px auto 0;
+  width: 1200px;
+  position: relative;
+}
+h1 span:last-child{
+  position: absolute;
+  right:0;
+  top: 24px;
+  font-size: 16px;
+}
 
 nav {
   background: @app-color;
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: white;
-  padding-top: 24px;
 
   > * {
     flex: 0 0 auto;
